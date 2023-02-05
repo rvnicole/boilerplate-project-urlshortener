@@ -29,4 +29,8 @@ app.listen(port, function() {
   console.log(`Listening on port ${port}`);
 });
 
-
+// Conexión a la Base de Datos
+mongoose.connect(mySecret, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
