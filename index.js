@@ -48,3 +48,7 @@ const esquemaUrls = new mongoose.Schema({
     unique : true
   }
 }); 
+
+// Modelo
+const modeloUrls =  mongoose.model( 'urls', esquemaUrls );
+
