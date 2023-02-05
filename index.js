@@ -34,3 +34,17 @@ mongoose.connect(mySecret, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
+
+// Esquema
+const esquemaUrls = new mongoose.Schema({
+  original_url : {
+    type : String,
+    required : true,
+    unique : true
+  },
+  short_url : {
+    type : Number,
+    required : true,
+    unique : true
+  }
+}); 
