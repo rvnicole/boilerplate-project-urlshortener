@@ -4,7 +4,10 @@ const cors = require('cors');
 const app = express();
 
 // Importar Mongoose
-const mongoose = require( 'mongoose' );
+const mongoose = require('mongoose');
+
+// Variable de entorno con la URI de conexión 
+const mySecret = process.env['BD-URI']
 
 // Basic Configuration
 const port = process.env.PORT || 3000;
